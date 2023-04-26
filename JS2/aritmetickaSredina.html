@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+        <h2>Unesi dva niza brojeva<br>(odvoji ih zarezom)</h2><br>
+    </div>
+    <div>
+        <label for="niz1">Prvi niz:</label>
+        <input type="text" id="niz1">
+      </div><br>
+      <div>
+        <label for="niz2">Drugi niz:</label>
+        <input type="text" id="niz2">
+      </div><br>
+      <button onclick="izracunaj()">Izračunaj</button>
+      <p id="arit"></p>
+      <p id="rezultat"></p>
+  </body>
+  <script>
+    function izracunaj() {
+      
+        let niz1 = document.getElementById("niz1").value.split(",").map(Number);
+      console.log(niz1);
+      
+      let niz2 = document.getElementById("niz2").value.split(",").map(Number);
+      console.log(niz2);
+      
+      let aritSred1 = getAverage(niz1);
+      let aritSred2 = getAverage(niz2);
+      
+      let minAritSred = Math.min(aritSred1, aritSred2);
+      let maxAritSred = Math.max(aritSred1, aritSred2);
+      
+      let elementi = [];
+      
+      for (let i = 0; i < niz1.length; i++) {
+        if (niz1[i] > minAritSred && niz1[i] < maxAritSred) {
+          elementi.push(niz1[i]);
+        }
+      }
+      
+      for (let i = 0; i < niz2.length; i++) {
+        if (niz2[i] > minAritSred && niz2[i] < maxAritSred) {
+          elementi.push(niz2[i]);
+        }
+      }
+      
+      document.getElementById("arit").innerHTML = "Aritmetička sredina niza 1: <b>" + aritSred1 + "</b><br><br>Aritmetička sredina niza 2:<b> " + aritSred2 + "</b>";
+      
+      elementi.sort();
+      
+      let rezultat;
+      
+      if (elementi.length > 0) {
+        rezultat = "Elementi između aritmetičkih sredina zadanih nizova su: <b>" + elementi.join(", ") + "</b>";
+      } else {
+        rezultat = "Nema elemenata između aritmetičkih sredina zadanih nizova.";
+      }
+      
+      document.getElementById("rezultat").innerHTML = rezultat;
+    }
+    
+    function getAverage(niz) {
+      let suma = 0;
+      for (let i = 0; i < niz.length; i++) {
+        suma += niz[i];
+      }
+      return suma / niz.length;
+    }
+  </script>
+</html>

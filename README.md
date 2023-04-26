@@ -9,6 +9,7 @@ https://playground.jsreport.net/w/anon/JOcsIssn
 https://playground.jsreport.net/w/anon/voo5wjEi
 
 3)JavaScript
+
 Potrebno je napraviti funkciju u koju korisnik unosi 3 cijela broja. Zatim program izračuna umnožak i zbroj tri unesena broja. Kao rezultat program ispisuje poruku: 
 
 a) "Umnožak brojeva x, y i z veći je od zbroja brojeva", ako vrijedi,

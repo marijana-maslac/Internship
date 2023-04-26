@@ -1,5 +1,10 @@
 # Intership
 
+at LAMA - Solutions4Business, Split
+20.03.'23.-21.04.'23.
+Razvoj programskih modula u JavaScriptu, TypeScriptu. Izrada stranica u HTML5 uz
+korištenje CSS-a
+
 1)JavaScript report 
 
 https://playground.jsreport.net/w/anon/JOcsIssn

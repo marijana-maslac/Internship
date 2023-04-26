@@ -19,4 +19,5 @@ c) "Zbroj brojeva x, y i z veći je jednak njihovom umnošku", ako vrijedi
 
 
 4)JavaScript
+
 Korisnik unosi dva niza brojeva. Definirajte funkciju koja kao argument prima niz, a kao povratnu vrijednost vraća aritmetičku sredinu elemenata niza. Uz pomoć definirane funkcije izračunajte aritmetičke sredine dva unesena niza. Kao rezultat programa ispišite sve elemente dva unesena niza čije se vrijednosti nalaze između dvije izračunate aritmetičke sredine.

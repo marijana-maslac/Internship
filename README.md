@@ -1,4 +1,4 @@
-# Intership
+# Internship
 
 at LAMA - Solutions4Business, Split
 20.03.'23.-21.04.'23.
